@@ -34,10 +34,14 @@ Console.WriteLine("Hello, World!");
 
     // Initialization
     //--------------------------------------------------------------------------------------
+
+    
     const int screenWidth = 800;
     const int screenHeight = 450;
 
     Raylib.InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
+    
+
 
     Raylib.SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
