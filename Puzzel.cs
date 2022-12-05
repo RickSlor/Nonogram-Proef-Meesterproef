@@ -1,5 +1,4 @@
 using System;
-using System.Windows.Controls;
 namespace Nonogram
 {
     public class Puzzel

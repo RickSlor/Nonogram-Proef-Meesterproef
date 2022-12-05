@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="PresentationFramework" Version="4.6.0" />
     <PackageReference Include="Raylib-cs" Version="4.2.0.1" />
     <PackageReference Include="System.Windows.Extensions" Version="7.0.0" />
   </ItemGroup>
