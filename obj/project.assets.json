@@ -128,11 +128,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\2022-2023 SCHOOL (4)\\P1\\Project OOP\\Github OOP\\Github Local Files\\Nonogram\\Nonogram.csproj",
+      "projectUniqueName": "d:\\2022-2023 SCHOOL (4)\\P1\\Project OOP\\Github OOP\\Github Local Files\\Nonogram\\Nonogram.csproj",
       "projectName": "Nonogram",
-      "projectPath": "D:\\2022-2023 SCHOOL (4)\\P1\\Project OOP\\Github OOP\\Github Local Files\\Nonogram\\Nonogram.csproj",
+      "projectPath": "d:\\2022-2023 SCHOOL (4)\\P1\\Project OOP\\Github OOP\\Github Local Files\\Nonogram\\Nonogram.csproj",
       "packagesPath": "C:\\Users\\ricks\\.nuget\\packages\\",
-      "outputPath": "D:\\2022-2023 SCHOOL (4)\\P1\\Project OOP\\Github OOP\\Github Local Files\\Nonogram\\obj\\",
+      "outputPath": "d:\\2022-2023 SCHOOL (4)\\P1\\Project OOP\\Github OOP\\Github Local Files\\Nonogram\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ricks\\AppData\\Roaming\\NuGet\\NuGet.Config",
