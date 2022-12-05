@@ -1,5 +1,6 @@
 ﻿using System;
 using Raylib_cs;
+using System.Windows.Controls;
 
 namespace Nonogram // Note: actual namespace depends on the project name.
 {
@@ -8,8 +9,6 @@ namespace Nonogram // Note: actual namespace depends on the project name.
         static void Main(string[] args)
         {
             Puzzel p = new Puzzel();
-
-            
             const int screenWidth = 800;
             const int screenHeight = 450;
 
