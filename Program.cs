@@ -73,11 +73,12 @@ using System;
 using System.Numerics;
 using Raylib_cs;
 
-namespace TrianglePlusGrid;
+namespace Nonogram;
     internal class Program
 {
     static void Main(string[] args)
     {
+        //Work on Multidimensional Arrays to inplement 0,1 working. 0 = empty 1 = black/filled-in.
         Raylib.InitWindow(800, 480, "3D Triangle + Grid test");
         Camera3D camera;
         camera.position = (new Vector3 (10.0f, 10.0f, 10.0f)); // Camera3D position
