@@ -15,6 +15,7 @@ namespace Nonogram // Note: actual namespace depends on the project name.
 
             const int screenWidth = 1980;
             const int screenHeight = 1024;
+            
             Raylib.InitWindow(screenWidth, screenHeight, "Nonogram");
             Raylib.SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
 
