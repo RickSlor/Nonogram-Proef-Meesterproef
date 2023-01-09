@@ -80,6 +80,10 @@ namespace Nonogram;
     {
         //Work on Multidimensional Arrays to inplement 0,1 working. 0 = empty 1 = black/filled-in.
         Raylib.InitWindow(800, 480, "3D Triangle + Grid test");
+
+
+        Texture2D = Raylib.LoadImage("resources/White Tile.png");
+
         Camera3D camera;
         camera.position = (new Vector3 (10.0f, 10.0f, 10.0f)); // Camera3D position
         camera.target = (new Vector3 (0.0f, 0.0f, 0.0f));      // Camera3D looking at point
