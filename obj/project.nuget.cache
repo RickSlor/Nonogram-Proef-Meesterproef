@@ -1,16 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "uMCsIxXBWKhCJTGc2X4cEYa8R95/WB4pL3S+tuUZRDne1QZKBhd9t8frCk2Q5zumzZetl+GEtk6X7Jc+PJaYcw==",
+  "dgSpecHash": "AB2oO1+z/B46xsa9daS64Uff0mjkyyWB4PoHUzgk7iv7L1SN0bM4z0SxwAPqEsVekQLwq6aatb8gEWbTamfylA==",
   "success": true,
   "projectFilePath": "D:\\2022-2023 SCHOOL (4)\\P1\\Project OOP\\Github OOP\\Github Local Files\\Nonogram\\Nonogram.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ricks\\.nuget\\packages\\microsoft.toolkit.highperformance\\7.1.2\\microsoft.toolkit.highperformance.7.1.2.nupkg.sha512",
-    "C:\\Users\\ricks\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "C:\\Users\\ricks\\.nuget\\packages\\raylib-cs\\4.2.0.1\\raylib-cs.4.2.0.1.nupkg.sha512",
-    "C:\\Users\\ricks\\.nuget\\packages\\raylib-cslo\\4.2.0.3\\raylib-cslo.4.2.0.3.nupkg.sha512",
-    "C:\\Users\\ricks\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
-    "C:\\Users\\ricks\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\ricks\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
+    "C:\\Users\\ricks\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

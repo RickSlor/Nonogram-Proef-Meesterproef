@@ -10,8 +10,6 @@
 
   <ItemGroup>
     <PackageReference Include="Raylib-cs" Version="4.2.0.1" />
-    <PackageReference Include="Raylib-CsLo" Version="4.2.0.3" />
-    <PackageReference Include="System.Windows.Extensions" Version="7.0.0" />
   </ItemGroup>
 
 </Project>

@@ -40,17 +40,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Raylib-CsLo": {
-              "target": "Package",
-              "version": "[4.2.0.3, )"
-            },
             "Raylib-cs": {
               "target": "Package",
               "version": "[4.2.0.1, )"
-            },
-            "System.Windows.Extensions": {
-              "target": "Package",
-              "version": "[7.0.0, )"
             }
           },
           "imports": [

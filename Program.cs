@@ -95,19 +95,26 @@ namespace Nonogram // Note: actual namespace depends on the project name.
         {
             //test
             Puzzel p = new Puzzel();
+
             const int screenWidth = 1980;
             const int screenHeight = 1024;
-            Image o = Raylib.LoadImage("Resources/WhiteTile.png");
+            Raylib.InitWindow(screenWidth, screenHeight, "Nonogram");
+            Raylib.SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
+
+            
+            Image O = Raylib.LoadImage("Resources/WhiteTile.png");
             Image I = Raylib.LoadImage("Resources/BlackTile.png");
 
             Texture2D textureI = Raylib.LoadTextureFromImage(I);
+            Texture2D textureO = Raylib.LoadTextureFromImage(O);
+            
             //Unload images when they are converted to textures 
-            Raylib.UnloadImage(o);
+            Raylib.UnloadImage(O);
             Raylib.UnloadImage(I);
 
-            Raylib.InitWindow(screenWidth, screenHeight, "Nonogram");
+            
 
-            Raylib.SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
+            
             //--------------------------------------------------------------------------------------
 
             // Main game loop
@@ -129,6 +136,7 @@ namespace Nonogram // Note: actual namespace depends on the project name.
             // De-Initialization
             //--------------------------------------------------------------------------------------
             Raylib.UnloadTexture(textureI);
+            Raylib.UnloadTexture(textureO);
             Raylib.CloseWindow();        // Close window and OpenGL context
             //--------------------------------------------------------------------------------------
         }

@@ -17,24 +17,19 @@ namespace Nonogram
             Console.WriteLine("Hello from Puzzel!");
 
                 //2D multidimensional array (2x3)
-                int[ , ] x = new int [2, 3]{ {0, 0, 0}, {0, 0, 0,}};
-
-            /*
-             for (int y = 0; y < numOfCells; ++y)
-             {
-                g.DrawLine(p, 0, y * cellSize, numOfCells * cellSize, y * cellSize);
-             }
-
-            for (int x = 0; x < numOfCells; ++x)
-             {
-                g.DrawLine(p, x * cellSize, 0, x * cellSize, numOfCells * cellSize);
-             }
-
-                //Example of a multidimentional array (2x3)
-                //To be used for loading the tile images
-                int[ , ] x = new int [2, 3]{ {0, 0, 0}, {0, 0, 0,}};
-
-            */
+                int[ , ] x = new int [10, 10]
+                {
+                    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                    {0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
+                    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                    {0, 0, 1, 0, 0, 0, 0, 0, 0, 0},
+                    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+                };
             }
         }
     }
