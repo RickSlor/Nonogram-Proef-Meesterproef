@@ -93,6 +93,7 @@ namespace Nonogram // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
+            //test
             Puzzel p = new Puzzel();
             const int screenWidth = 1980;
             const int screenHeight = 1024;
