@@ -1,75 +1,5 @@
 ﻿/*
 using System;
-using Raylib_cs;
-using System.Numerics;
-
-namespace Triangle
-{
-
-    class Program
-    {
-
-        static void Main(string[] args)
-        {
-
-
-
-            Raylib.InitWindow(800, 480, "Triangle Test");
-            Camera3D camera;
-            camera.position = new Vector3(10.0f, 10.0f, 10.0f);             // Camera3D position
-            camera.target = new Vector3(0.0f, 0.0f, 0.0f);                  // Camera3D looking at point
-            camera.up = new Vector3(0.0f, 1.0f, 0.0f);                      // Camera3D up vector (rotation towards target)
-            camera.fovy = 120.0f;                                           // Camera3D field-of-view Y
-            camera.projection = CameraProjection.CAMERA_PERSPECTIVE;        // Camera3D mode type
-
-
-
-            Vector3 point1 = new Vector3(0.0f, 0.0f, 0.0f);
-            Vector3 point2 = new Vector3(10.0f, 0.0f, 0.0f);
-            Vector3 point3 = new Vector3(10.0f, 10.0f, 0.0f);
-
-            Raylib.SetCameraMode(camera, CameraMode.CAMERA_FREE);           // Set a free camera mode
-            Raylib.SetTargetFPS(60);
-
-            Rlgl.rlDisableBackfaceCulling();
-            while (!Raylib.WindowShouldClose())
-            {
-                Raylib.UpdateCamera(ref camera);
-                Raylib.BeginDrawing();
-                Raylib.ClearBackground(Color.RAYWHITE);
-
-                Raylib.BeginMode3D(camera);
-
-
-                Raylib.DrawTriangle3D(point1, point2, point3, Color.BLACK);
-
-
-
-                Raylib.EndMode3D();
-
-
-                //text
-                Raylib.DrawRectangle(10, 10, 320, 133, Raylib.ColorAlpha(Color.SKYBLUE, 0.5f));
-                Raylib.DrawRectangleLines(10, 10, 320, 133, Color.BLUE);
-
-                Raylib.DrawText("Free camera default controls:", 20, 20, 10, Color.BLACK);
-                Raylib.DrawText("- Mouse Wheel to Zoom in-out", 40, 40, 10, Color.DARKGRAY);
-                Raylib.DrawText("- Mouse Wheel Pressed to Pan", 40, 60, 10, Color.DARKGRAY);
-                Raylib.DrawText("- Alt + Mouse Wheel Pressed to Rotate", 40, 80, 10, Color.DARKGRAY);
-                Raylib.DrawText("- Alt + Ctrl + Mouse Wheel Pressed for Smooth Zoom", 40, 100, 10, Color.DARKGRAY);
-
-
-                Raylib.EndDrawing();
-            }
-
-            Raylib.CloseWindow();
-        }
-    }
-}
-*/
-
-
-using System;
 using System.Numerics;
 using Raylib_cs;
 
@@ -82,7 +12,7 @@ namespace Nonogram;
         Raylib.InitWindow(800, 480, "3D Triangle + Grid test");
 
 
-        Texture2D = Raylib.LoadImage("resources/White Tile.png");
+        //Texture2D = Raylib.LoadImage("resources/White Tile.png");//
 
         Camera3D camera;
         camera.position = (new Vector3 (10.0f, 10.0f, 10.0f)); // Camera3D position
@@ -149,12 +79,11 @@ namespace Nonogram;
     }
     }
 }
+*/
 
 
 
 
-
-/*
 using System;
 using System.Numerics;
 using Raylib_cs;
@@ -167,20 +96,10 @@ namespace Nonogram // Note: actual namespace depends on the project name.
         static void Main(string[] args)
         {
             Puzzel p = new Puzzel();
-            const int screenWidth = 800;
-            const int screenHeight = 450;
-            const int x = screenWidth;
-            const int y = screenHeight;
-
-            Camera2D camera = new Camera2D()
-            {
-                target = new Vector2(x + ((screenWidth / 2) + 800), y + ((screenHeight / 2) + 450)),
-                offset = new Vector2(screenWidth, screenHeight),
-                rotation = 0.0f,
-                zoom = 1.0f,
-            };
-
-            Raylib.InitWindow(screenWidth, screenHeight, "raylib [core] Program");
+            const int screenWidth = 1980;
+            const int screenHeight = 1024;
+            //Image LoadImage(const char WhiteTile)
+            Raylib.InitWindow(screenWidth, screenHeight, "Nonogram");
 
             Raylib.SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
             //--------------------------------------------------------------------------------------
@@ -191,25 +110,20 @@ namespace Nonogram // Note: actual namespace depends on the project name.
                 // Update
                 //----------------------------------------------------------------------------------
                 // TODO: Update your variables here
+
+                //Example of a multidimentional array (10x10)
+                //To be used for loading the tile images
+                int[ , ] x = new int [10, 10];
+
                 //----------------------------------------------------------------------------------
 
                 // Draw
                 //----------------------------------------------------------------------------------
                 Raylib.BeginDrawing();
                 Raylib.ClearBackground(Color.WHITE);
-
-                Raylib.BeginMode2D(camera);
-                Raylib.DrawGrid(10, 10);
-                //Console.WriteLine("Test");
-                Raylib.EndMode2D();
-
-                Raylib.DrawText("Testing, You created your first window!", 190, 200, 20, Color.LIGHTGRAY);
+                Raylib.DrawText("Test text here", 500, 500, 50, Color.LIGHTGRAY);
                 Raylib.EndDrawing();
                 //----------------------------------------------------------------------------------
-            }
-            if(Raylib.DrawGrid() == true)
-            {
-                Console.WriteLine("Testing");
             }
             // De-Initialization
             //--------------------------------------------------------------------------------------
@@ -218,4 +132,3 @@ namespace Nonogram // Note: actual namespace depends on the project name.
         }
     }
 }
-*/
