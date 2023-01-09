@@ -9,8 +9,10 @@ namespace Nonogram
 
         public Puzzel()
         {
+            /*
             Image o = Raylib.LoadImage("Resources/WhiteTile.png");
             Image I = Raylib.LoadImage("Resources/BlackTile.png");
+            */
             {
             Console.WriteLine("Hello from Puzzel!");
 

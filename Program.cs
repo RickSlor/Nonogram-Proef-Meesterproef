@@ -99,7 +99,8 @@ namespace Nonogram // Note: actual namespace depends on the project name.
             Image o = Raylib.LoadImage("Resources/WhiteTile.png");
             Image I = Raylib.LoadImage("Resources/BlackTile.png");
 
-            Texture2D texture = Raylib.LoadTextureFromImage(I);
+            Texture2D textureI = Raylib.LoadTextureFromImage(I);
+            //Unload images when they are converted to textures 
             Raylib.UnloadImage(o);
             Raylib.UnloadImage(I);
 
@@ -119,14 +120,14 @@ namespace Nonogram // Note: actual namespace depends on the project name.
                 // Draw
                 //----------------------------------------------------------------------------------
                 Raylib.BeginDrawing();
-                Raylib.DrawTexture(texture, screenWidth/2 - texture.width/2, screenHeight/2 - texture.height/2 - 40, Color.RAYWHITE);
+                Raylib.DrawTexture(textureI, screenWidth/2 - textureI.width/2, screenHeight/2 - textureI.height/2 - 40, Color.RAYWHITE);
                 Raylib.ClearBackground(Color.WHITE);
                 Raylib.EndDrawing();
                 //----------------------------------------------------------------------------------
             }
             // De-Initialization
             //--------------------------------------------------------------------------------------
-            Raylib.UnloadTexture(texture);
+            Raylib.UnloadTexture(textureI);
             Raylib.CloseWindow();        // Close window and OpenGL context
             //--------------------------------------------------------------------------------------
         }
