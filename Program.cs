@@ -31,6 +31,7 @@ namespace Nonogram // Note: actual namespace depends on the project name.
                 // Update
                 //----------------------------------------------------------------------------------
                 // TODO: Update your variables here
+                
                 //----------------------------------------------------------------------------------
 
                 // Draw

@@ -41,6 +41,18 @@ namespace Nonogram
                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
                 };
+/*
+Random random = new Random();
+int[ , ] numbers = new int[5,5];
+//populating 2D Array
+for (int m = 0; m < 5 ; m++)
+{
+    for (int n = 0; n < 5 ; n++)
+    {
+        numbers[m,n] = random.Next(0, 25);
+    }
+}
+*/
             }
         }
     }
