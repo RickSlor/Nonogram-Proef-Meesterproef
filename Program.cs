@@ -39,6 +39,7 @@ namespace Nonogram // Note: actual namespace depends on the project name.
                 Raylib.BeginDrawing();
 
                 Raylib.DrawTexture(textureI, screenWidth/2 - textureI.width/2, screenHeight/2 - textureI.height/2 - 40, Color.RAYWHITE);
+                Raylib.DrawTexture(textureI, screenWidth/2 - textureI.width/2, screenHeight/2 - textureI.height/2 - 150, Color.RAYWHITE);
                 Raylib.DrawTexture(textureO, screenWidth/2 - textureO.width/2, screenHeight/2 - textureO.height/2 - 80, Color.RAYWHITE);
 
                 Raylib.ClearBackground(Color.LIGHTGRAY);
