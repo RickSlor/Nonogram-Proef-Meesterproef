@@ -11,7 +11,7 @@ namespace Nonogram
         {
             {
             Console.WriteLine("Hello from Puzzel!");
-
+                //Possible way to make it so would be !!!Enum!!!
                 //2D multidimensional array (10x10) "Generated grid"
                 int[ , ] Ggrid = new int [10, 10]
                 {
