@@ -9,23 +9,34 @@ namespace Nonogram
 
         public Puzzel()
         {
-            /*
-            Image o = Raylib.LoadImage("Resources/WhiteTile.png");
-            Image I = Raylib.LoadImage("Resources/BlackTile.png");
-            */
             {
             Console.WriteLine("Hello from Puzzel!");
 
-                //2D multidimensional array (2x3)
-                int[ , ] x = new int [10, 10]
+                //2D multidimensional array (10x10) "Generated grid"
+                int[ , ] Ggrid = new int [10, 10]
+                {
+                    {1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
+                    {0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+                    {0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+                    {0, 0, 0, 0, 1, 0, 0, 0, 0, 1},
+                    {0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+                    {0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+                    {0, 0, 1, 0, 0, 0, 0, 0, 0, 1},
+                    {0, 0, 0, 0, 0, 1, 0, 0, 0, 1},
+                    {0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+                    {0, 0, 0, 0, 0, 0, 0, 0, 0, 1}
+                };
+
+                //2D multidimensional array (10x10) "User grid"
+                int[ , ] Ugrid = new int [10, 10]
                 {
                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                    {0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                    {0, 0, 1, 0, 0, 0, 0, 0, 0, 0},
+                    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
