@@ -11,6 +11,8 @@ namespace Nonogram
         Texture2D textureI;
         Texture2D textureO;
 
+        Texture2D textureX;
+
         int[ , ] Ggrid;
         int[ , ] Ugrid;
 
@@ -23,6 +25,7 @@ namespace Nonogram
 
             textureI = Raylib.LoadTexture("Resources/BlackTile.png");
             textureO = Raylib.LoadTexture("Resources/WhiteTile.png");
+            textureX = Raylib.LoadTexture("Resources/XTile.png");
 
             Console.WriteLine("Hello from Puzzel!");
             //Possible way to make it so would be !!!Enum!!!
@@ -71,10 +74,17 @@ namespace Nonogram
                     int offset = 0;
                     int xpos = x * 12 + offset;
                     int ypos = y * 12 + offset;
+
                     if (Ggrid[y,x] == 0)
                     {
                         Raylib.DrawTexture(textureI, xpos, ypos, Color.RAYWHITE);
                     }
+
+                     else if (Ggrid[y,x] == 2)
+                    {
+                        Raylib.DrawTexture(textureX, xpos, ypos, Color.RAYWHITE);
+                    }
+
                     else
                     {
                         Raylib.DrawTexture(textureO, xpos, ypos, Color.RAYWHITE);
@@ -91,13 +101,19 @@ namespace Nonogram
                 int y = (int)indexpos.Y;
                 Console.WriteLine(x + ", " + y);
 
-                if (Ggrid[y,x] == 1)
-                {
-                    Ggrid[y,x] = 0;
-                }
-                else
+                if (Ggrid[y,x] == 0)
                 {
                     Ggrid[y,x] = 1;
+                }
+
+                else
+                {
+                    Ggrid[y,x] = 2;
+                }
+                
+                if (Ggrid[y,x] == 2)
+                {
+                    Ggrid[y,x] =0;
                 }
             }
 
@@ -106,6 +122,7 @@ namespace Nonogram
         public void Close() {
             Raylib.UnloadTexture(textureI);
             Raylib.UnloadTexture(textureO);
+            Raylib.UnloadTexture(textureX);
         }
     }
 }
