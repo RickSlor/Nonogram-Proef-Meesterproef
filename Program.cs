@@ -9,7 +9,7 @@ namespace Nonogram // Note: actual namespace depends on the project name.
 
     internal class Program
     {
-        private static Gamescreen LOGO { get; set; }
+        //private static Gamescreen LOGO { get; set; }
 
         enum Gamescreen
             {
@@ -20,17 +20,8 @@ namespace Nonogram // Note: actual namespace depends on the project name.
             //test
             Puzzel p = new Puzzel();
 
-            Gamescreen currentGamescreen = LOGO;
+            Gamescreen currentGamescreen = Gamescreen.LOGO;
 
-            const int screenWidth = 1920;
-            const int screenHeight = 1080;
-            
-            Raylib.InitWindow(screenWidth, screenHeight, "Nonogram");
-            Raylib.SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
-
-            Texture2D textureI = Raylib.LoadTexture("Resources/BlackTile.png");
-            Texture2D textureO = Raylib.LoadTexture("Resources/WhiteTile.png");
-            
             //--------------------------------------------------------------------------------------
 
             // Main game loop
@@ -46,9 +37,7 @@ namespace Nonogram // Note: actual namespace depends on the project name.
                 //----------------------------------------------------------------------------------
                 Raylib.BeginDrawing();
 
-                Raylib.DrawTexture(textureI, screenWidth/2 - textureI.width/2, screenHeight/2 - textureI.height/2 - 40, Color.RAYWHITE);
-                Raylib.DrawTexture(textureI, screenWidth/2 - textureI.width/2, screenHeight/2 - textureI.height/2 - 150, Color.RAYWHITE);
-                Raylib.DrawTexture(textureO, screenWidth/2 - textureO.width/2, screenHeight/2 - textureO.height/2 - 80, Color.RAYWHITE);
+                p.HandlePuzzel();
 
                 Raylib.ClearBackground(Color.LIGHTGRAY);
 
@@ -57,8 +46,9 @@ namespace Nonogram // Note: actual namespace depends on the project name.
             }
             // De-Initialization
             //--------------------------------------------------------------------------------------
-            Raylib.UnloadTexture(textureI);
-            Raylib.UnloadTexture(textureO);
+            
+
+            p.Close();
 
             Raylib.CloseWindow();        // Close window and OpenGL context
             //--------------------------------------------------------------------------------------
