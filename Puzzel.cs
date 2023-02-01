@@ -72,8 +72,8 @@ namespace Nonogram
                 for (int x = 0; x < 10; x++)
                 {
                     int offset = 0;
-                    int xpos = x * 12 + offset;
-                    int ypos = y * 12 + offset;
+                    int xpos = x * 15 + offset;
+                    int ypos = y * 15 + offset;
 
                     if (Ggrid[y,x] == 0)
                     {
@@ -96,7 +96,7 @@ namespace Nonogram
             if (Raylib.IsMouseButtonPressed(0))
             {
                 // Console.WriteLine("mouse 0");
-                Vector2 indexpos = Raylib.GetMousePosition() / 12;
+                Vector2 indexpos = Raylib.GetMousePosition() / 15;
                 int x = (int)indexpos.X;
                 int y = (int)indexpos.Y;
                 Console.WriteLine(x + ", " + y);
