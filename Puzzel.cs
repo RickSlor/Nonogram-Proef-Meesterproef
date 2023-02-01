@@ -106,15 +106,10 @@ namespace Nonogram
                     Ggrid[y,x] = 1;
                 }
 
-                else
-                {
+                    else if (Ggrid[y,x] == 1)
+                    {
                     Ggrid[y,x] = 2;
-                }
-                
-                if (Ggrid[y,x] == 2)
-                {
-                    Ggrid[y,x] =0;
-                }
+                    }
             }
 
         }
